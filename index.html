@@ -18,7 +18,7 @@
   left:5%;
   z-index: 5;
   }
-  .main-info  {
+  #main-info  {
     text-align: center;
     background-color: rgb(168, 168, 168);
     font-family:"bookman";
@@ -28,17 +28,34 @@
     border-style: groove;
     border-width:5px;
     border-color: rgb(196, 163, 0);
+    border-radius:5px;
   }
 #song {
     font-style: italic;
   }
+  .italic {
+    font-style: italic;
+  }
+  #commentary { 
+    text-align: center;
+    font-family:"bookman";
+    width: 35%;
+    position: absolute;
+    top:25%;
+    left:62%;
+    border-style: ridge;
+    border-width:5px;
+    border-color: rgb(255, 48, 55);
+    border-radius:3px;
+  }
+
   </style>
 </head>
 
 
 <body>
   <div id="top-banner"><h1>A first web page</h1></div>
-  <div class="main-info"><p>This is my very first webpage. I am just testing a bunch of different things, <br>
+  <div id="main-info"><p>This is my very first webpage. I am just testing a bunch of different things, <br>
   maybe everything i want to try will end up working out. <br>
     In the mean time, while i actually do some stuff; here are the lyrics to Toto by Africa:<br></p>
 <p id="song">I hear the drums echoing tonight<br>
@@ -73,6 +90,11 @@ I bless the rains down in Africa<br>
 I bless the rains down in Africa<br>
 (Ah, gonna take the time)<br>
     Gonna take some time to do the things we never had</p></div>
+  <div id="commentary">
+  As you can see, to the right we can see a random block of text, 
+  typed up by an idiot explaining some random stuff,
+  including the lyrics to <span class="italic">AFRICA</span> by <span class="italic">TOTO</span>
+  </div>
 
 </body>
 
